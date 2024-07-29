@@ -12,3 +12,9 @@ body {
 button {
   cursor: pointer;
 }
+
+h2 {
+  font: var(--subtitle-text-sm);
+  text-transform: uppercase;
+  color: var(--base--gray-500);
+}
