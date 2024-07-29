@@ -1,0 +1,24 @@
+:root {
+  /* Color styles */
+  --main--pink: #d658b3;
+  --main--green: #45b442;
+  --base--white: #ffffff;
+  --base--gray-100: #f4f1f2;
+  --base--gray-200: #e9e7e9;
+  --base--gray-300: #dfdcdf;
+  --base--gray-400: #cecacd;
+  --base--gray-500: #756c71;
+  --base--gray-600: #4a4448;
+  --base--gray-700: #332b31;
+
+  /* Text-size styles */
+  --heading--title--md: 1.5rem;
+  --heading--title--sm: 1.12rem;
+  --heading--subtitle--md: 0.88rem;
+  --heading--subtitle--sm: 0.75rem;
+  --body--text--md: 1rem;
+  --body--text--sm: 0.88rem;
+  --body--text--xs: 0.75rem;
+
+  --font-family: "Oxygen", sans-serif;
+}
