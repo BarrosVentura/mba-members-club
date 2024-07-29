@@ -21,4 +21,14 @@
   --body--text--xs: 0.75rem;
 
   --font-family: "Oxygen", sans-serif;
+  --body-text-md: var(--body--text--md) / 140% var(--font-family);
+  --body-text-sm: var(--body--text--sm) / 140% var(--font-family);
+  --body-text-xs: var(--body--text--xs) / 140% var(--font-family);
+
+  --title-text-md: bold var(--heading--title--md) / 140% var(--font-family);
+  --title-text-sm: bold var(--heading--title--sm) / 140% var(--font-family);
+  --subtitle-text-md: bold var(--heading--subtitle--md) / 140%
+    var(--font-family);
+  --subtitle-text-sm: bold var(--heading--subtitle--sm) / 140%
+    var(--font-family);
 }

@@ -14,12 +14,17 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <img src="./assets/logo.svg" alt="members club" />
-      <form>
-        <label for="cardId"> ID do cartão </label>
-        <input type="text" name="cardId" id="" />
-        <button type="submit">
+      <form class="search-card-form">
+        <input
+          class="search-card-form__input"
+          type="text"
+          name="cardId"
+          placeholder="ID do cartão"
+          id=""
+        />
+        <button class="search-card-form__button" type="submit">
           <img src="./assets/enter-arrow.svg" alt="search content" />
         </button>
       </form>
