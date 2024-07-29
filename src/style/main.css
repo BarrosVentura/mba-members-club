@@ -1,0 +1,115 @@
+.main {
+  width: 912px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "user fidelity fidelity"
+    "history fidelity fidelity"
+    "history fidelity fidelity"
+    "history status status";
+  gap: 1rem 1.5rem;
+
+  > div {
+    background-color: var(--base--gray-100);
+    border: 1px solid var(--base--gray-300);
+    border-radius: 1rem;
+
+    padding: 1rem;
+  }
+
+  .user {
+    grid-area: user;
+
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    h1 {
+      font: var(--title-text-sm);
+      color: var(--base--gray-600);
+    }
+
+    p {
+      font: var(--body-text-xs);
+      color: var(--base--gray-500);
+    }
+  }
+
+  .history {
+    grid-area: history;
+    max-height: 360px;
+
+    overflow-y: scroll;
+
+    .history__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      border-bottom: 1px solid var(--base--gray-300);
+      padding-bottom: 1rem;
+
+      h2 {
+        font: var(--subtitle-text-sm);
+        text-transform: uppercase;
+        color: var(--base--gray-500);
+      }
+
+      span {
+        font: var(--body-text-xs);
+        color: var(--base--gray-500);
+      }
+    }
+
+    .history__body {
+      padding-top: 1rem;
+
+      .history-item {
+        display: flex;
+        justify-content: space-between;
+
+        .history-item__dates {
+          .history-item__date {
+            font: var(--subtitle-text-sm);
+            color: var(--base--gray-600);
+          }
+
+          .history-item__time {
+            font: var(--body-text-xs);
+            color: var(--base--gray-500);
+          }
+        }
+
+        .history-item__check {
+          width: 1.5rem;
+          height: 1.5rem;
+          padding: 0.25rem;
+          border-radius: 50%;
+          line-height: 0;
+          background-color: var(--main--green-opacity);
+
+          img {
+            object-fit: contain;
+            max-width: 100%;
+            height: auto;
+          }
+        }
+
+        &:not(:last-child) {
+          padding-bottom: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .fidelity {
+    grid-area: fidelity;
+  }
+
+  .status {
+    grid-area: status;
+  }
+}
