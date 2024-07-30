@@ -151,5 +151,32 @@
 
   .status {
     grid-area: status;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 27px 32px;
+
+    p {
+      font: var(--body-text-sm);
+      color: var(--base--gray-500);
+      margin-block-end: 12px;
+      b {
+        padding-inline-end: 4px;
+        font: var(--title-text-md);
+        color: var(--base--gray-600);
+      }
+    }
+
+    .status-image-wrapper {
+      display: grid;
+      place-items: center;
+
+      width: 72px;
+      height: 72px;
+      background-color: var(--base--gray-200);
+
+      border-radius: 50%;
+    }
   }
 }
