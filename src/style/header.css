@@ -20,7 +20,7 @@
     padding: 0.5rem;
 
     &:has(:focus-within) {
-      outline: 2px solid var(--main--green);
+      outline: 2px solid var(--main--pink);
     }
 
     .search-card-form__input {
@@ -39,6 +39,10 @@
       background-color: var(--base--gray-700);
       border: none;
       border-radius: 0.5rem;
+
+      &:hover {
+        background-color: var(--base--gray-500);
+      }
     }
   }
 
