@@ -11,6 +11,13 @@
   --base--gray-500: #756c71;
   --base--gray-600: #4a4448;
   --base--gray-700: #332b31;
+  --gradient: linear-gradient(
+    90deg,
+    #2daa6e 0%,
+    #2daaaa 33.33%,
+    #856ccf 66.67%,
+    #d658b3 100%
+  );
 
   /* Text-size styles */
   --heading--title--md: 1.5rem;

@@ -27,6 +27,31 @@
 
     gap: 1rem;
 
+    .user-image-wrapper {
+      position: relative;
+      line-height: 0;
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        inset: 0;
+        background: var(--gradient);
+        transform: scale(1.08);
+        border-radius: 10px;
+      }
+
+      img {
+        position: relative;
+        z-index: 2;
+
+        border: 2px solid var(--base--white);
+
+        object-fit: contain;
+        border-radius: 10px;
+      }
+    }
+
     h1 {
       font: var(--title-text-sm);
       color: var(--base--gray-600);
