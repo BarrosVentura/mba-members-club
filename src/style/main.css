@@ -179,6 +179,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 32px;
 
     padding: 27px 32px;
 
@@ -193,6 +194,34 @@
       }
     }
 
+    .status-content {
+      flex: 1;
+    }
+
+    .status-progression {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .status-bar {
+      height: 8px;
+      flex: 1;
+      background-color: var(--base--gray-300);
+
+      border-radius: 8px;
+    }
+
+    .status-completition {
+      --completed: 0;
+
+      height: 8px;
+      width: var(--completed);
+      background: var(--gradient);
+
+      border-radius: 8px;
+    }
+
     .status-image-wrapper {
       display: grid;
       place-items: center;
@@ -202,6 +231,12 @@
       background-color: var(--base--gray-200);
 
       border-radius: 50%;
+
+      img {
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 }
