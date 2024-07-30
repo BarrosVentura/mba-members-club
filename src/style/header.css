@@ -41,4 +41,12 @@
       border-radius: 0.5rem;
     }
   }
+
+  @media screen and (width < 768px) {
+    padding-inline: 12px;
+
+    .search-card-form {
+      width: 100%;
+    }
+  }
 }

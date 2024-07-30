@@ -133,9 +133,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 16px;
     }
 
     .fidelity-header__text {
+      flex: 1;
       h2 {
         padding-bottom: 0.25rem;
       }
@@ -170,6 +172,16 @@
 
         background-color: var(--base--gray-200);
         border-radius: 1.25rem;
+
+        @media screen and (width < 768px) {
+          height: 56px;
+          border-radius: 12px;
+
+          img {
+            height: 40px;
+            width: 40px;
+          }
+        }
       }
     }
   }
@@ -238,5 +250,19 @@
         height: auto;
       }
     }
+  }
+
+  @media screen and (width < 768px) {
+    width: 100%;
+    padding-inline: 12px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "user"
+      "fidelity"
+      "fidelity"
+      "status"
+      "history";
+
+    margin-bottom: 32px;
   }
 }
