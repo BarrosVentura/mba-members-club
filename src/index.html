@@ -11,17 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+
+    <script type="module" src="./index.js" defer></script>
+    <title>Member Club</title>
   </head>
   <body>
     <header class="header">
       <img src="./assets/logo.svg" alt="members club" />
-      <form class="search-card-form">
+      <form class="search-card-form" data-search>
         <input
           class="search-card-form__input"
           type="text"
           name="cardId"
           placeholder="ID do cartão"
+          required
           id=""
         />
         <button class="search-card-form__button" type="submit">
@@ -35,35 +38,16 @@
           <img src="./assets/profile.png" alt="" />
         </div>
         <div>
-          <h1>Natália Miranda</h1>
-          <p>Cliente desde 18/09/2023</p>
+          <h1 data-username></h1>
+          <p data-user-registered></p>
         </div>
       </div>
       <div class="history">
         <div class="history__header">
           <h2>histórico</h2>
-          <span>7 cortes</span>
+          <span data-history-total></span>
         </div>
-        <ul class="history__body">
-          <li class="history-item">
-            <div class="history-item__dates">
-              <p class="history-item__date">29/04/05</p>
-              <p class="history-item__time">18:30</p>
-            </div>
-            <di class="history-item__check">
-              <img src="./assets/checkmark-small.svg" alt="" />
-            </di>
-          </li>
-          <li class="history-item">
-            <div class="history-item__dates">
-              <p class="history-item__date">29/04/05</p>
-              <p class="history-item__time">18:30</p>
-            </div>
-            <div class="history-item__check">
-              <img src="./assets/checkmark-small.svg" alt="" />
-            </div>
-          </li>
-        </ul>
+        <ul class="history__list" data-history-list></ul>
       </div>
       <div class="fidelity">
         <div class="fidelity-header">
@@ -71,31 +55,24 @@
             <h2>cartão fidelidade</h2>
             <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
           </div>
-          <span class="id-tag">ID: 124-537-835-230</span>
+          <span class="id-tag" data-user-id></span>
         </div>
-        <div class="fidelity-marks">
-          <div><img src="./assets/checkmark-big.svg" alt="" /></div>
-          <div><img src="./assets/checkmark-big.svg" alt="" /></div>
-          <div><img src="./assets/checkmark-big.svg" alt="" /></div>
-          <div><img src="./assets/checkmark-big.svg" alt="" /></div>
-          <div><img src="./assets/checkmark-big.svg" alt="" /></div>
-          <div><img src="./assets/checkmark-big.svg" alt="" /></div>
-          <div><img src="./assets/checkmark-big.svg" alt="" /></div>
-          <div><img src="./assets/checkmark-big.svg" alt="" /></div>
-          <div><img src="./assets/checkmark-big.svg" alt="" /></div>
-          <div><img src="./assets/checkmark-big.svg" alt="" /></div>
-        </div>
+        <div class="fidelity-marks" data-fidelity-marks></div>
       </div>
       <div class="status">
         <div class="status-content">
           <div class="status-header">
-            <p><b>3</b>cortes restantes</p>
+            <p><b data-status-remaining></b>cortes restantes</p>
           </div>
           <div class="status-progression">
             <div class="status-bar">
-              <div class="status-completition" style="--completed: 70%"></div>
+              <div
+                class="status-completition"
+                style="--completed: 20%"
+                data-status-progress
+              ></div>
             </div>
-            <span>7 de 10</span>
+            <span data-status-total></span>
           </div>
         </div>
         <div class="status-image-wrapper">
